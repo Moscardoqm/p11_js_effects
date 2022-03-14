@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>p11_js_efects</title>
+    <script src=https://code.jquery.com/jquery-3.6.0.min.js></script>
+
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .container{
+        width: 100%;
+        height: 100vh;
+        position: relative;
+       
+    }
+
+    
+
+    ul{
+      margin: 40px;
+      position: absolute;
+    }
+
+    ul li{
+        display: inline;
+        list-style-type: none;
+        padding: 20px;
+    }
+
+    ul li:hover {
+        box-shadow:  10px 10px yellow;
+    }
+
+   
+    #caixa1{
+        position: relative;
+        border: 2px solid white;
+        z-index: 10;
+        margin: auto;
+        display: flex;
+        background-color: rgb(9, 8, 117);
+        color: rgb(255, 255, 255);
+        width: 50%;
+        height: 50vh;
+    }
+
+    #caixa2{
+
+        border: 2px solid white;
+        z-index: 15;
+        top: 15vh;
+        width: 50%;
+        height: 50%;
+        left: 30%;
+        display: flex;
+        position: absolute;
+        background-color:coral;
+        color: brown;
+    }
+
+    #caixa1:hover, #menu_fade li:hover{
+        box-shadow:  10px 10px coral;
+    }
+
+    #caixa2:hover, #menu_slide li:hover{
+        box-shadow:  10px 10px rgb(9, 8, 117);
+    }
+
+    #fx, #fxs{
+        padding: 25px;
+        position: absolute;
+        right: 0;
+    }
+
+    #fx:hover{
+        color: rgb(9, 8, 117);
+        background-color: coral;
+    }
+
+    
+    #fxs:hover{
+        color: coral;
+        background-color: rgb(9, 8, 117);
+    }
+
+    #menu_fade{
+        margin: 40px;
+    }
+
+    #menu_slide{
+        margin: 140px 0 0 40px;
+        position: absolute;
+       top: 0;
+
+    }
+
+    #menu_slide li{
+        background-color: coral;
+        color: brown;
+    }
+
+    #menu_fade li{
+        background-color: rgb(9, 8, 117);
+        color: white;
+    }
+
+    h2{
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: center; 
+        align-items: center;
+    }
+
+  
+
+</style>
+</head>
+<body>
+
+    <div class="container">
+
+        <ul id="menu_fade">
+            <li id="fi">Fade In</li>
+            <li id="fo"> Fade Out</li>
+            <li id="ft"> Fade Toggle</li>
+        </ul>
+
+        <div id="caixa1">
+            <p id="fx">X</p>
+            <h2>hola</h2>
+        </div>
+
+  
+
+    
+        <ul id="menu_slide">
+            <li id="sd">Slide Down</li>
+            <li id="su"> Slide Up</li>
+            <li id="st"> Slide Toggle</li>
+        </ul>
+
+        <div id="caixa2">
+            <p id="fxs">X</p>
+            <h2>hola</h2>
+        </div>
+
+    
+
+    </div>
+    
+
+</body>
+</html>
